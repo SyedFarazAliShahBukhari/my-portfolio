@@ -263,6 +263,87 @@ header {
     font-size: 16px;
 }
 
+
+.card-container {
+    margin: -20px;
+    background-image: url(./images/banner-background-one.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .custom-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .custom-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .card-btn {
+    display: inline-block;
+    background-color: #F36100;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    background-color: #d84f00;
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 600px) {
+    .tip-card {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media (min-width: 1024px) {
+    .tip-card {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+  }
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .header, .hero {
