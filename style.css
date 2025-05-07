@@ -254,7 +254,7 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.card h4:hover::after {
+.card:hover h4::after {
     width: 50%;
 }
 
