@@ -3,123 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Faraz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="about">
-        <div class="header">
-         <div class="logo">
-            <span>F</span>
-            <span>A</span>
-            <span>R</span>
-            <span>A</span>
-            <span>Z</span>
-         </div>
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact US</li>
-            </ul>
-            <div class="icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-
-                <button class="btn-w">Download CV</button>
+    <!-- Header & Navigation -->
+    <header id="home">
+        <nav class="header">
+            <div class="logo">
+                <span>S</span><span>Y</span><span>E</span><span>D</span>
             </div>
             
-        </div>
-     <div class="hero">
-        <div class="hero1 half">
-            <h2>Hello</h2>
-            <h1>I Am Syed Faraz</h1>
-            <span class="auto-types"></span>
-            <p>Its a personal portfolio, collection of my work, achievements, and skills that highlights my abilities and professional growth. It serves as</p>
-            <button>View Portfolio <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="hero2 half">
-            <img src="./images/My Portfolio profile e.png" alt="">
-            <!-- <h1>WEB DESIGNER</h1> -->
-            <h2>WEB DESIGNER</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="header-actions">
+                <div class="social-icons">
+                    <a target="_blank" href="https://github.com/SyedFarazAliShahBukhari"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sayed-faraz-ali-shah-bukhari-171551214/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Syed_Faraz_Alee" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a  href="mailto:farazalishahbukhari@gmail.com" class="btn">Hire Me</a>
+            </div>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
 
-        </div>
-
-     </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-subtitle fade-in">Hello, I'm</h2>
+                <h1 class="hero-title fade-in delay-1">Syed Faraz</h1>
+                <h2 class="hero-title fade-in delay-2">I'm a <span class="auto-types">Web Developer</span></h2>
+                <p class="hero-description fade-in delay-3">Creative web developer specializing in modern, responsive websites and web applications with a focus on user experience and clean code.</p>
+                <a href="/images/faraz-cv.pdf" target="_blank" class="hero-btn fade-in delay-4">Download CV</a>
+            </div>
+            
+            <div class="hero-image">
+                <img src="./images/My Portfolio profile e.png" alt="Developer" class="hero-img fade-in delay-2">
+                <h2 class="hero-bg-text">DEVELOPER</h2>
+            </div>
+        </section>
     </header>
-<section class="cards">
-<div class="card">
-    <i class="fa-solid fa-pen-ruler"></i>
-    <h4>Web Design</h4>
-    <p>10 projects</p>
-</div>
 
-<div class="card">
-    <i class="fa-regular fa-object-ungroup"></i>
-    <h4>UI/UX Design</h4>
-    <p>25 projects</p>
-</div>
+    <!-- Features/Services Section -->
+    <section class="features" id="features">
+        <h2 class="section-title fade-in">My Services</h2>
+        
+        <div class="features-container">
+            <div class="feature-card fade-in">
+                <i class="fas fa-code feature-icon"></i>
+                <h3 class="feature-title">Web Development</h3>
+                <p class="feature-description">Custom website development using modern technologies like HTML5, CSS3, JavaScript, and frameworks to create fast, responsive sites.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-1">
+                <i class="fas fa-mobile-alt feature-icon"></i>
+                <h3 class="feature-title">Responsive Design</h3>
+                <p class="feature-description">Mobile-first approach to ensure your website looks and works perfectly on all devices from smartphones to desktops.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-2">
+                <i class="fas fa-paint-brush feature-icon"></i>
+                <h3 class="feature-title">UI/UX Design</h3>
+                <p class="feature-description">Beautiful, intuitive interfaces designed with user experience in mind to maximize engagement and conversions.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-    <i class="fa-solid fa-lightbulb"></i>
-    <h4>Web Research</h4>
-    <p>50 projects</p>
-</div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title fade-in">My Portfolio</h2>
+        
+        <div class="portfolio-container">
+            <div class="portfolio-card fade-in">
+                <img src="./images/project1.png" alt="Project 1" class="portfolio-img">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Saloon website</h3>
+                    <p class="portfolio-description">A fully responsive Saloon store for booking and appointments</p>
+                    <a href="https://hairsaloon02.netlify.app/" target="_blank" class="portfolio-btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="portfolio-card fade-in delay-1">
+                <img src="./images/project2.png" alt="Project 2" class="portfolio-img">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Tables Using JavaScript</h3>
+                    <p class="portfolio-description">A fully Responsive tables work using tailwind css and javascript</p>
+                    <a href="https://mathtables.netlify.app" target="_blank" class="portfolio-btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="portfolio-card fade-in delay-2">
+                <img src="./images/project3.jpg" alt="Project 3" class="portfolio-img">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Mobile App UI</h3>
+                    <p class="portfolio-description">Modern mobile application interface design with smooth animations and intuitive navigation.</p>
+                    <a href="#" class="portfolio-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title">Get In Touch</h2>
+        
+        <div class="contact-info">
+            <div class="phone-number">
+                <p>Phone 1:</p>
+                <a href="tel:+923115533268">0311 - 5533268</a>
+            </div>
+            <div class="phone-number">
+                <p>Phone 2:</p>
+                <a href="tel:+923003372771">0300 - 3372771</a>
+            </div>
+        </div>
 
-</section>
+    </section>
 
-<<div class="card-container">
-    <!-- Card 1: Glimy Website -->
-    <div class="custom-card">
-      <img src="./images/project1.png" alt="Glimy Website Screenshot">
-      <div class="card-content">
-        <h3>Glimy - Salon Website</h3>
-        <p>A stylish responsive website for a salon showcasing services, pricing, and booking options.</p>
-        <a href="https://hairsaloon02.netlify.app/" target="_blank" class="card-btn">Visit Website</a>
-      </div>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">PORT</div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://github.com/SyedFarazAliShahBukhari" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sayed-faraz-ali-shah-bukhari-171551214/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Syed_Faraz_Alee" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <p class="copyright">© 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
     </div>
-  
-    <!-- Card 2: Multiplication Table App -->
-    <div class="custom-card">
-      <img src="./images/project2.png" alt="Multiplication Table Screenshot">
-      <div class="card-content">
-        <h3>Table Generator</h3>
-        <p>A clean and interactive tool to print multiplication tables dynamically by entering any number.</p>
-        <a href="https://mathtables.netlify.app/" target="_blank" class="card-btn">Visit Website</a>
-      </div>
-    </div>
-  </div>
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-types",{
-    strings :["WEB DEVELOPER", "UI/UX DESIGNER", "JS DEVELOPER"],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop :true,
-    
-    })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
